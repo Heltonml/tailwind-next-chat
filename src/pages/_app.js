@@ -1,10 +1,10 @@
-import 'tailwindcss/tailwind.css';
+// import 'tailwindcss/tailwind.css';
 import { ThemeProvider } from 'next-themes';
-// import '../../styles/globals.css';
+import '../../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
     return (
-        <ThemeProvider attribute="class">
+        <ThemeProvider>
             <Component {...pageProps} />
         </ThemeProvider>
     );
